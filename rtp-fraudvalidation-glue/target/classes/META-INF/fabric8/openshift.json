@@ -1,0 +1,193 @@
+{
+  "apiVersion" : "v1",
+  "kind" : "List",
+  "items" : [ {
+    "apiVersion" : "v1",
+    "kind" : "Service",
+    "metadata" : {
+      "annotations" : {
+        "fabric8.io/git-commit" : "159c12372aaa7b7675b8fddc39ebd93ecd66eb95",
+        "fabric8.io/iconUrl" : "img/icons/spring-boot.svg",
+        "fabric8.io/git-branch" : "master",
+        "prometheus.io/scrape" : "true",
+        "prometheus.io/port" : "9779"
+      },
+      "labels" : {
+        "expose" : "true",
+        "app" : "rtp-fraud-validation-payment-glue",
+        "provider" : "fabric8",
+        "version" : "1.0.0.0",
+        "group" : "rtp.demo"
+      },
+      "name" : "rtp-fraud-validation-payment-glue"
+    },
+    "spec" : {
+      "ports" : [ {
+        "name" : "http",
+        "port" : 8080,
+        "protocol" : "TCP",
+        "targetPort" : 8080
+      } ],
+      "selector" : {
+        "app" : "rtp-fraud-validation-payment-glue",
+        "provider" : "fabric8",
+        "group" : "rtp.demo"
+      }
+    }
+  }, {
+    "apiVersion" : "apps.openshift.io/v1",
+    "kind" : "DeploymentConfig",
+    "metadata" : {
+      "annotations" : {
+        "fabric8.io/git-commit" : "159c12372aaa7b7675b8fddc39ebd93ecd66eb95",
+        "fabric8.io/iconUrl" : "img/icons/spring-boot.svg",
+        "fabric8.io/git-branch" : "master",
+        "fabric8.io/metrics-path" : "dashboard/file/kubernetes-pods.json/?var-project=rtp-fraud-validation-payment-glue&var-version=1.0.0.0"
+      },
+      "labels" : {
+        "app" : "rtp-fraud-validation-payment-glue",
+        "provider" : "fabric8",
+        "version" : "1.0.0.0",
+        "group" : "rtp.demo"
+      },
+      "name" : "rtp-fraud-validation-payment-glue"
+    },
+    "spec" : {
+      "replicas" : 1,
+      "revisionHistoryLimit" : 2,
+      "selector" : {
+        "app" : "rtp-fraud-validation-payment-glue",
+        "provider" : "fabric8",
+        "group" : "rtp.demo"
+      },
+      "strategy" : {
+        "rollingParams" : {
+          "timeoutSeconds" : 3600
+        },
+        "type" : "Rolling"
+      },
+      "template" : {
+        "metadata" : {
+          "annotations" : {
+            "fabric8.io/git-commit" : "159c12372aaa7b7675b8fddc39ebd93ecd66eb95",
+            "fabric8.io/iconUrl" : "img/icons/spring-boot.svg",
+            "fabric8.io/git-branch" : "master",
+            "fabric8.io/metrics-path" : "dashboard/file/kubernetes-pods.json/?var-project=rtp-fraud-validation-payment-glue&var-version=1.0.0.0"
+          },
+          "labels" : {
+            "app" : "rtp-fraud-validation-payment-glue",
+            "provider" : "fabric8",
+            "version" : "1.0.0.0",
+            "group" : "rtp.demo"
+          }
+        },
+        "spec" : {
+          "containers" : [ {
+            "env" : [ {
+              "name" : "BOOTSTRAP_SERVERS",
+              "value" : "rtp-demo-cluster-kafka-bootstrap:9092"
+            }, {
+              "name" : "CREDITOR_PAYMENTS_TOPIC",
+              "value" : "creditor-processed-payments"
+            }, {
+              "name" : "CASE_ID_GLUE",
+              "value" : "rtp-case-list"
+            }, {
+              "name" : "APPLICATION_ID",
+              "value" : "fraud-validation-glue"
+            }, {
+              "name" : "CLIENT_ID",
+              "value" : "fraud-validation-glue"
+            }, {
+              "name" : "BC_PATH",
+              "value" : "http://rhpam7-install-kieserver-rhpam7-install-opentlc-mgr.apps.florida-2e55.open.redhat.com"
+            }, {
+              "name" : "BC_USER_NAME",
+              "value" : "pamAdmin"
+            }, {
+              "name" : "BC_PASSWORD",
+              "value" : "redhatpam1!"
+            }, {
+              "name" : "KUBERNETES_NAMESPACE",
+              "valueFrom" : {
+                "fieldRef" : {
+                  "fieldPath" : "metadata.namespace"
+                }
+              }
+            } ],
+            "image" : "rtp-fraud-validation-payment-glue:1.0.0.0",
+            "imagePullPolicy" : "IfNotPresent",
+            "livenessProbe" : {
+              "httpGet" : {
+                "path" : "/health",
+                "port" : 8080,
+                "scheme" : "HTTP"
+              },
+              "initialDelaySeconds" : 180
+            },
+            "name" : "spring-boot",
+            "ports" : [ {
+              "containerPort" : 8080,
+              "name" : "http",
+              "protocol" : "TCP"
+            }, {
+              "containerPort" : 9779,
+              "name" : "prometheus",
+              "protocol" : "TCP"
+            }, {
+              "containerPort" : 8778,
+              "name" : "jolokia",
+              "protocol" : "TCP"
+            } ],
+            "readinessProbe" : {
+              "httpGet" : {
+                "path" : "/health",
+                "port" : 8080,
+                "scheme" : "HTTP"
+              },
+              "initialDelaySeconds" : 10
+            },
+            "securityContext" : {
+              "privileged" : false
+            }
+          } ]
+        }
+      },
+      "triggers" : [ {
+        "type" : "ConfigChange"
+      }, {
+        "imageChangeParams" : {
+          "automatic" : true,
+          "containerNames" : [ "spring-boot" ],
+          "from" : {
+            "kind" : "ImageStreamTag",
+            "name" : "rtp-fraud-validation-payment-glue:1.0.0.0"
+          }
+        },
+        "type" : "ImageChange"
+      } ]
+    }
+  }, {
+    "apiVersion" : "route.openshift.io/v1",
+    "kind" : "Route",
+    "metadata" : {
+      "labels" : {
+        "expose" : "true",
+        "app" : "rtp-fraud-validation-payment-glue",
+        "provider" : "fabric8",
+        "version" : "1.0.0.0",
+        "group" : "rtp.demo"
+      },
+      "name" : "rtp-fraud-validation-payment-glue"
+    },
+    "spec" : {
+      "port" : {
+        "targetPort" : 8080
+      },
+      "to" : {
+        "kind" : "Service",
+        "name" : "rtp-fraud-validation-payment-glue"
+      }
+    }
+  } ]
+}

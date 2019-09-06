@@ -23,20 +23,20 @@ read -p "Home directory: " home
 # oc login -u system:admin
 # minishift addon apply admin-user
 
-sudo yum install mysql -y
-sudo yum install java-1.8.0-openjdk-devel -y
-
-wget http://apache.mirrors.tds.net/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz
-tar xvzf apache-maven-3.6.1-bin.tar.gz
-
-export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
-
-echo $PATH
-export PATH=$PATH:$home/rtp-reference/apache-maven-3.6.1/bin
-
-echo "Installed Maven"
-mvn -v
-
+# sudo yum install mysql -y
+# sudo yum install java-1.8.0-openjdk-devel -y
+#
+# wget http://apache.mirrors.tds.net/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz
+# tar xvzf apache-maven-3.6.1-bin.tar.gz
+#
+# export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+#
+# echo $PATH
+# export PATH=$PATH:$home/rtp-reference/apache-maven-3.6.1/bin
+#
+# echo "Installed Maven"
+# mvn -v
+#
 oc new-project rtp-reference
 
 echo '
@@ -165,12 +165,12 @@ oc new-app \
     --name=mysql-56-rhel7 \
     registry.access.redhat.com/rhscl/mysql-56-rhel7
 
-until [ "$(oc get pods --selector app=mysql-56-rhel7 -o jsonpath="{.items[0].status.containerStatuses[?(@.name == \"mysql-56-rhel7\")].ready}" 2> /dev/null)" = "true" ]; do sleep 3; printf "Waiting until container is ready...\n"; done
-
-oc port-forward $(oc get pods --selector app=mysql-56-rhel7 -o jsonpath="{.items[0].metadata.name}") 3306 &> /dev/null &
-cpid=$!
-trap "kill $cpid" EXIT
-until mysql --host localhost -P 3306 --protocol tcp -u dbuser -D rtpdb -pdbpass --execute exit &> /dev/null; do sleep 3; printf "Waiting until MySQL comes up...\n"; done
+# until [ "$(oc get pods --selector app=mysql-56-rhel7 -o jsonpath="{.items[0].status.containerStatuses[?(@.name == \"mysql-56-rhel7\")].ready}" 2> /dev/null)" = "true" ]; do sleep 3; printf "Waiting until container is ready...\n"; done
+#
+# oc port-forward $(oc get pods --selector app=mysql-56-rhel7 -o jsonpath="{.items[0].metadata.name}") 3306 &> /dev/null &
+# cpid=$!
+# trap "kill $cpid" EXIT
+# until mysql --host localhost -P 3306 --protocol tcp -u dbuser -D rtpdb -pdbpass --execute exit &> /dev/null; do sleep 3; printf "Waiting until MySQL comes up...\n"; done
 
 printf "Loading create_debtor_credit_payment.sql\n"
 mysql -w --host localhost -P 3306 --protocol tcp -u dbuser -D rtpdb -pdbpass < ./rtp-debtor-transaction-repository-mysql/src/main/resources/database-scripts/create_debtor_credit_payment.sql

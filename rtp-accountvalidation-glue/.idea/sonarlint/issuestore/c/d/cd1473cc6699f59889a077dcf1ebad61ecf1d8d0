@@ -1,0 +1,8 @@
+
+[squid:CallToDeprecatedMethodA",Remove this use of "join"; it is deprecated.(É½ì‹8÷øº”Ğ-
+isquid:HiddenFieldCheckU";Rename "streams" which hides the field declared at line 43.(ƒıÌ¦ÿÿÿÿÿ8÷øº”Ğ-
+Usquid:S2629^"7Use the built-in formatting to construct this argument.(™··8†·Ì”Ğ-
+Osquid:S1602O",Remove useless curly braces around statement(ñà·“øÿÿÿÿ8†·Ì”Ğ-
+Osquid:S1612O",Replace this lambda with a method reference.(ñà·“øÿÿÿÿ8†·Ì”Ğ-
+asquid:CallToDeprecatedMethodK"-Remove this use of "print"; it is deprecated.(İğÂÏıÿÿÿÿ8÷øº”Ğ-
+xsquid:UselessImportCheck"HRemove this unused import 'org.apache.kafka.common.serialization.Serde'.(”âóüÿÿÿÿ8÷øº”Ğ-

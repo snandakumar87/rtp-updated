@@ -1,0 +1,31 @@
+
+Usquid:S2629p"7Use the built-in formatting to construct this argument.(™··8ŠĞı¦Ğ-
+~squid:UselessImportCheck"SRemove this unused import 'rtp.demo.debtor.complete.payment.pojo.ElasticInterface'.(Ÿ÷å8Ò‹Ï¸Ğ-
+asquid:UselessImportCheck"1Remove this unused import 'java.io.OutputStream'.(Ó ³ÿÿÿÿÿ8ØöÈ¸Ğ-
+\
+squid:S106‘"9Replace this use of System.out or System.err by a logger.(ŒÃ­¾øÿÿÿÿ8ÕĞ®¨Ğ-
+Osquid:S1612Y",Replace this lambda with a method reference.(ñà·“øÿÿÿÿ8ŠĞı¦Ğ-
+qsquid:UselessImportCheck"ARemove this unused import 'java.security.KeyManagementException'.(ë¢ö§ıÿÿÿÿ8ØöÈ¸Ğ-
+[squid:CallToDeprecatedMethodK",Remove this use of "join"; it is deprecated.(É½ì‹8ŠĞı¦Ğ-
+Usquid:S1153”"1Directly append the argument of String.valueOf().(ü¹×µüÿÿÿÿ8ÖÒ§¹Ğ-
+xsquid:UselessImportCheck"HRemove this unused import 'org.apache.kafka.common.serialization.Serde'.(”âóüÿÿÿÿ8ŠĞı¦Ğ-
+isquid:HiddenFieldCheckf";Rename "streams" which hides the field declared at line 53.(ƒıÌ¦ÿÿÿÿÿ8ŠĞı¦Ğ-
+\squid:UselessImportCheck"1Remove this unused import 'java.math.BigDecimal'.(êêŠ8Ö´‰¹Ğ-
+asquid:CallToDeprecatedMethodU"-Remove this use of "print"; it is deprecated.(İğÂÏıÿÿÿÿ8ŠĞı¦Ğ-
+^squid:S1854w";Remove this useless assignment to local variable "payment".(é¬¶Õşÿÿÿÿ8¡ƒş¦Ğ-
+Osquid:S1481w",Remove this unused "payment" local variable.(é¬¶Õşÿÿÿÿ8¡ƒş¦Ğ-
+gsquid:UselessImportCheck"7Remove this unused import 'java.security.SecureRandom'.(›éè™úÿÿÿÿ8ØöÈ¸Ğ-
+`squid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8ØöÈ¸Ğ-
+fsquid:UselessImportCheck";Remove this unused import 'java.net.MalformedURLException'.(ªËŞˆ8ØöÈ¸Ğ-
+[squid:S2629Š"7Use the built-in formatting to construct this argument.(ÆØ–ùÿÿÿÿ8…ÊŒ¨Ğ-
+Vsquid:S2629"7Use the built-in formatting to construct this argument.(‰’£„8ÍÎÔ§Ğ-
+Psquid:S1481ˆ",Remove this unused "payment" local variable.(é¬¶Õşÿÿÿÿ8×ÅÏ§Ğ-
+bsquid:UselessImportCheck"7Remove this unused import 'java.net.HttpURLConnection'.(¬¬˜­8©å¹·Ğ-
+jsquid:UselessImportCheck"?Remove this unused import 'java.security.cert.X509Certificate'.(å×â8à÷Ò¸Ğ-
+_squid:S1854ˆ";Remove this useless assignment to local variable "payment".(é¬¶Õşÿÿÿÿ8×ÅÏ§Ğ-
+Osquid:S1602Y",Remove useless curly braces around statement(ñà·“øÿÿÿÿ8ŠĞı¦Ğ-
+ssquid:UselessImportCheck"CRemove this unused import 'java.security.NoSuchAlgorithmException'.(ŒòÍ¾şÿÿÿÿ8ØöÈ¸Ğ-
+\
+squid:S106•"9Replace this use of System.out or System.err by a logger.(¤ŸÚúÿÿÿÿ8ØË¿¨Ğ-
+Ysquid:UselessImportCheck")Remove this unused import 'java.net.URL'.(ñìÁ„üÿÿÿÿ8ØöÈ¸Ğ-
+Usquid:S1153”"1Directly append the argument of String.valueOf().(ü¹×µüÿÿÿÿ8Éˆ¨¹Ğ-

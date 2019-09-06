@@ -1,0 +1,18 @@
+
+Qsquid:S1481"".Remove this unused "startCase" local variable.(ÍÇñÑüÿÿÿÿ8Äïƒ»Ğ-
+‰squid:UselessImportCheck
+"YRemove this unused import 'org.apache.commons.httpclient.protocol.ProtocolSocketFactory'.(¨Üùÿÿÿÿ8Ë²™¼Ğ-
+usquid:UselessImportCheck"JRemove this unused import 'org.apache.camel.util.jsse.KeyStoreParameters'.(ò±Ğ˜8Äïƒ»Ğ-
+§squid:S1845"ˆRename field "LOG" to prevent any misunderstanding/clash with field "log" defined in superclass "org.apache.camel.builder.RouteBuilder".(Ü¬ß8Äïƒ»Ğ-
+Hsquid:S001086")Either remove or fill this block of code.(”ı¾8Äïƒ»Ğ-
+Xsquid:S1191"5Use classes from the Java API instead of Sun classes.(Æ¡³ ÿÿÿÿÿ8Äïƒ»Ğ-
+Usquid:S1481&"2Remove this unused "httpComponent" local variable.(×ù°‡ÿÿÿÿÿ8Äïƒ»Ğ-
+‚squid:UselessImportCheck"RRemove this unused import 'org.apache.camel.component.http4.HttpClientConfigurer'.(×æëùÿÿÿÿ8Ë²™¼Ğ-
+zsquid:UselessImportCheck	"ORemove this unused import 'org.apache.camel.util.jsse.TrustManagersParameters'.(‹¿ƒª8Äïƒ»Ğ-
+hsquid:UselessImportCheck"8Remove this unused import 'sun.net.www.http.HttpClient'.(Æ¡³ ÿÿÿÿÿ8Ë²™¼Ğ-
+|squid:UselessImportCheck"LRemove this unused import 'org.apache.camel.util.jsse.SSLContextParameters'.(ÿ§ÂÎüÿÿÿÿ8Äïƒ»Ğ-
+dsquid:S1854&"ARemove this useless assignment to local variable "httpComponent".(×ù°‡ÿÿÿÿÿ8Äïƒ»Ğ-
+Rsquid:EmptyStatementUsageCheck5"Remove this empty statement.(Åñ­õşÿÿÿÿ8Äïƒ»Ğ-
+`squid:S1854""=Remove this useless assignment to local variable "startCase".(ÍÇñÑüÿÿÿÿ8Äïƒ»Ğ-
+squid:UselessImportCheck"`Remove this unused import 'rtp.demo.workflow.transformer.ParseFITToFICustomerCreditTransferMsg'.(„ØÔ·úÿÿÿÿ8Äïƒ»Ğ-
+squid:UselessImportCheck"`Remove this unused import 'rtp.message.model.serde.FIToFICustomerCreditTransferV06Deserializer'.(¨óª±üÿÿÿÿ8Äïƒ»Ğ-

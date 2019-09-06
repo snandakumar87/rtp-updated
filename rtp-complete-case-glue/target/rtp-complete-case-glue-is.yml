@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: List
+items:
+- apiVersion: image.openshift.io/v1
+  kind: ImageStream
+  metadata:
+    name: rtp-complete-case-glue
+  spec:
+    tags:
+    - from:
+        kind: ImageStreamImage
+        name: rtp-complete-case-glue@sha256:7d00ba16e6e4c6ea0f04d2577fa17373cb7e2cb3c313481e4292d7dbf77a2bb4
+        namespace: rtp-reference
+      name: 1.0.0.0

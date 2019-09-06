@@ -1,0 +1,17 @@
+
+isquid:HiddenFieldCheck`";Rename "streams" which hides the field declared at line 45.(ƒıÌ¦ÿÿÿÿÿ8ïØ¥Ğ-
+[squid:CallToDeprecatedMethodD",Remove this use of "join"; it is deprecated.(É½ì‹8ïØ¥Ğ-
+Jsquid:S1602[",Remove useless curly braces around statement(ÎóâÃ8ïØ¥Ğ-
+jsquid:CommentedOutCodeLine€"<This block of commented-out lines of code should be removed.(ÙèÏ8ïØ¥Ğ-
+Jsquid:S1612[",Replace this lambda with a method reference.(ÎóâÃ8ïØ¥Ğ-
+^squid:S1854p";Remove this useless assignment to local variable "payment".(é¬¶Õşÿÿÿÿ8¾ùë¥Ğ-
+Usquid:S2629i"7Use the built-in formatting to construct this argument.(™··8ïØ¥Ğ-
+nsquid:CommentedOutCodeLinew"<This block of commented-out lines of code should be removed.( ÑÕ‚şÿÿÿÿ8ïØ¥Ğ-
+Osquid:S1612R",Replace this lambda with a method reference.(ñà·“øÿÿÿÿ8ïØ¥Ğ-
+asquid:CallToDeprecatedMethodN"-Remove this use of "print"; it is deprecated.(İğÂÏıÿÿÿÿ8ïØ¥Ğ-
+Isquid:S1172v"&Remove these unused method parameters.(ãæˆ÷ÿÿÿÿÿ8ïØ¥Ğ-
+Osquid:S1602R",Remove useless curly braces around statement(ñà·“øÿÿÿÿ8ïØ¥Ğ-
+xsquid:UselessImportCheck"HRemove this unused import 'org.apache.kafka.common.serialization.Serde'.(”âóüÿÿÿÿ8ïØ¥Ğ-
+Osquid:S1481p",Remove this unused "payment" local variable.(é¬¶Õşÿÿÿÿ8¾ùë¥Ğ-
+Gsquid:S2629q"$Invoke method(s) only conditionally.(‘ÚŠÜúÿÿÿÿ8†µŸ¦Ğ-
+nsquid:CommentedOutCodeLiner"<This block of commented-out lines of code should be removed.(†ÁÂğıÿÿÿÿ8…Ä¿¦Ğ-

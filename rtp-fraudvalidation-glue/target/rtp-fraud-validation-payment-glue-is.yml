@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: List
+items:
+- apiVersion: image.openshift.io/v1
+  kind: ImageStream
+  metadata:
+    name: rtp-fraud-validation-payment-glue
+  spec:
+    tags:
+    - from:
+        kind: ImageStreamImage
+        name: rtp-fraud-validation-payment-glue@sha256:676147820f4646c66cdce7abdb1a0027a20180000153da1cd8c1296e84f0ff53
+        namespace: rtp-reference
+      name: 1.0.0.0
