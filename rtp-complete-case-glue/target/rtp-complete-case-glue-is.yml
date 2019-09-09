@@ -10,6 +10,6 @@ items:
     tags:
     - from:
         kind: ImageStreamImage
-        name: rtp-complete-case-glue@sha256:7d00ba16e6e4c6ea0f04d2577fa17373cb7e2cb3c313481e4292d7dbf77a2bb4
+        name: rtp-complete-case-glue@sha256:e58da9378cb154bed2e2e5a258debba0d0bb48263fd1a4718bc4e1e94e649310
         namespace: rtp-reference
       name: 1.0.0.0

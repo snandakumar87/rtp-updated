@@ -1,5 +1,5 @@
 rtp.demo.debtor.complete.payment.pojo.CaseDataTransformer
 rtp.demo.debtor.complete.payment.pojo.ElasticInterface
+rtp.demo.debtor.complete.payment.pojo.BusinessCentralTaskInterface
 rtp.demo.debtor.complete.payment.application.Application
 rtp.demo.debtor.complete.payment.stream.UpdateValidationStatusGlue
-rtp.demo.debtor.complete.payment.pojo.BusinessCentralTaskInterface

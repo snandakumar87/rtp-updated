@@ -6,7 +6,7 @@
     "kind" : "Service",
     "metadata" : {
       "annotations" : {
-        "fabric8.io/git-commit" : "159c12372aaa7b7675b8fddc39ebd93ecd66eb95",
+        "fabric8.io/git-commit" : "5bee8466e67053a78761fd314e3e00e8e3c667e9",
         "fabric8.io/iconUrl" : "img/icons/spring-boot.svg",
         "fabric8.io/git-branch" : "master",
         "prometheus.io/scrape" : "true",
@@ -39,7 +39,7 @@
     "kind" : "DeploymentConfig",
     "metadata" : {
       "annotations" : {
-        "fabric8.io/git-commit" : "159c12372aaa7b7675b8fddc39ebd93ecd66eb95",
+        "fabric8.io/git-commit" : "5bee8466e67053a78761fd314e3e00e8e3c667e9",
         "fabric8.io/iconUrl" : "img/icons/spring-boot.svg",
         "fabric8.io/git-branch" : "master",
         "fabric8.io/metrics-path" : "dashboard/file/kubernetes-pods.json/?var-project=rtp-complete-case-glue&var-version=1.0.0.0"
@@ -69,7 +69,7 @@
       "template" : {
         "metadata" : {
           "annotations" : {
-            "fabric8.io/git-commit" : "159c12372aaa7b7675b8fddc39ebd93ecd66eb95",
+            "fabric8.io/git-commit" : "5bee8466e67053a78761fd314e3e00e8e3c667e9",
             "fabric8.io/iconUrl" : "img/icons/spring-boot.svg",
             "fabric8.io/git-branch" : "master",
             "fabric8.io/metrics-path" : "dashboard/file/kubernetes-pods.json/?var-project=rtp-complete-case-glue&var-version=1.0.0.0"
