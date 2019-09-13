@@ -52,7 +52,7 @@ public class RtpWorkflowRouteBuilder extends RouteBuilder {
 					.to("rest:post:/rtp/rt?host=https://txelgef3x4:4fqo676p85@app-name-kafka-2058344660.us-east-1.bonsaisearch.net:443&produces=application/json");
 			;
 		}catch (Exception e) {
-
+			e.printStackTrace();
 		}
 
 

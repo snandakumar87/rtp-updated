@@ -8,7 +8,7 @@ import javax.ws.rs.core.MediaType;
 public interface BusinessCentralTaskInterface {
 
    @PUT
-   @Path("/services/rest/server/containers/RTPProcessingEngine_1.0.0-SNAPSHOT/cases/instances/{caseId}/tasks/Transaction%20Completed")
+   @Path("/services/rest/server/containers/RTPProcessingEngine_1.0.0-SNAPSHOT/cases/instances/{caseId}/tasks/Acknowledged%20RTP%20Payment%20to%20TCH")
    @Consumes(MediaType.APPLICATION_JSON)
    @Produces(MediaType.APPLICATION_JSON)
 

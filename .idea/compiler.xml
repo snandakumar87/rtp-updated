@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="rtp-creditor-account-repository" />
+        <module name="rtp-creditor-account-repository-jdg" />
+        <module name="rtp-creditor-auditing" />
+        <module name="rtp-creditor-complete-payment" />
+        <module name="rtp-creditor-core-banking" />
+        <module name="rtp-creditor-customer-notification" />
+        <module name="rtp-creditor-domain-model" />
+        <module name="rtp-creditor-fraud-detection" />
+        <module name="rtp-creditor-payment-acknowledgement" />
+        <module name="rtp-creditor-payment-confirmation" />
+        <module name="rtp-creditor-payment-service" />
+        <module name="rtp-creditor-receive-payment" />
+        <module name="rtp-creditor-rules" />
+        <module name="rtp-creditor-transaction-repository" />
+        <module name="rtp-creditor-transaction-repository-mysql" />
+        <module name="rtp-creditor-validation-model" />
+        <module name="rtp-debtor-account-repository" />
+        <module name="rtp-debtor-account-repository-jdg" />
+        <module name="rtp-debtor-auditing" />
+        <module name="rtp-debtor-complete-payment" />
+        <module name="rtp-debtor-core-banking" />
+        <module name="rtp-debtor-customer-notification" />
+        <module name="rtp-debtor-domain-model" />
+        <module name="rtp-debtor-payment-confirmation" />
+        <module name="rtp-debtor-payment-service" />
+        <module name="rtp-debtor-send-payment" />
+        <module name="rtp-debtor-transaction-repository" />
+        <module name="rtp-debtor-transaction-repository-mysql" />
+        <module name="rtp-flow-viz-service" />
+        <module name="rtp-message-model" />
+        <module name="rtp-mock" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="rtp-creditor-account-repository" target="1.8" />
+      <module name="rtp-creditor-account-repository-jdg" target="1.8" />
+      <module name="rtp-creditor-auditing" target="1.8" />
+      <module name="rtp-creditor-complete-payment" target="1.8" />
+      <module name="rtp-creditor-core-banking" target="1.8" />
+      <module name="rtp-creditor-customer-notification" target="1.8" />
+      <module name="rtp-creditor-domain-model" target="1.8" />
+      <module name="rtp-creditor-fraud-detection" target="1.8" />
+      <module name="rtp-creditor-payment-acknowledgement" target="1.8" />
+      <module name="rtp-creditor-payment-confirmation" target="1.8" />
+      <module name="rtp-creditor-payment-service" target="1.8" />
+      <module name="rtp-creditor-receive-payment" target="1.8" />
+      <module name="rtp-creditor-rules" target="1.8" />
+      <module name="rtp-creditor-transaction-repository" target="1.8" />
+      <module name="rtp-creditor-transaction-repository-mysql" target="1.8" />
+      <module name="rtp-creditor-validation-model" target="1.8" />
+      <module name="rtp-debtor-account-repository" target="1.8" />
+      <module name="rtp-debtor-account-repository-jdg" target="1.8" />
+      <module name="rtp-debtor-auditing" target="1.8" />
+      <module name="rtp-debtor-complete-payment" target="1.8" />
+      <module name="rtp-debtor-core-banking" target="1.8" />
+      <module name="rtp-debtor-customer-notification" target="1.8" />
+      <module name="rtp-debtor-domain-model" target="1.8" />
+      <module name="rtp-debtor-payment-confirmation" target="1.8" />
+      <module name="rtp-debtor-payment-service" target="1.8" />
+      <module name="rtp-debtor-send-payment" target="1.8" />
+      <module name="rtp-debtor-transaction-repository" target="1.8" />
+      <module name="rtp-debtor-transaction-repository-mysql" target="1.8" />
+      <module name="rtp-flow-viz-service" target="1.8" />
+      <module name="rtp-message-model" target="1.8" />
+      <module name="rtp-mock" target="1.8" />
+      <module name="rtp-reference" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
